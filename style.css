@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  position: absolute;
+  top: 50px;
+}
+.grid {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.background {
+  height: 690px;
+  width: 1370px;
+}
+.gameGrid {
+  position: absolute;
+  top: 150px;
+  left: 200px;
+}
+.wrongGuess {
+  position: absolute;
+  top: 150px;
+  right: 200px;
+  height: 150px;
+  width: 220px;
+  border: 2px solid black;
+  border-radius: 15px;
+  text-align: center;
+}
+.input {
+  border: 1px solid black;
+}

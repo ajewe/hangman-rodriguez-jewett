@@ -8,21 +8,31 @@ let arrayAnswer = ['h', 'e', 'l', 'l', 'o']
 function checkInput() {
 
   let input = document.getElementById('input').value
-console.log('click click click', input)
 
   for (let i = 0; i < arrayAnswer.length; i++) {
-    if (input === arrayAnswer[i]){
+    if (input === arrayAnswer[i]) {
       // add that letter to the grid array at that corresponding spot
       document.getElementById('array').children[i].innerHTML = arrayAnswer[i]
-      
+      document.getElementById('input').value = ''
     }
-    // else wrongGuess(input);
   }
+  wrongGuess();
 };
 
 //make a wrong function and run it in the else of checkInput where it will 
 //add the guess to a guess bank
 
-// function wrongGuess(input) {
-
+function wrongGuess() {
   // add input to guess bank
+  input = document.getElementById('input').value
+  if (document.getElementById('input').value !== '') {
+    let newH4 = document.createElement('h4');
+    let textH4 = document.createTextNode(input)
+    newH4.appendChild(textH4)
+    document.getElementById('wrongGuess').appendChild(newH4)
+    document.getElementById('input').value = ''
+    //picture progression
+  }
+}
+
+// document.getElementById('array').children.indexOf(input) === -1

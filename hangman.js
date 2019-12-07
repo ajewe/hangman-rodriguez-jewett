@@ -22,4 +22,3 @@ function wrongGuess(input) {
 
   // add input to guess bank
 }
-

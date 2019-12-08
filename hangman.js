@@ -21,17 +21,26 @@ function checkInput() {
 
 //make a wrong function and run it in the else of checkInput where it will 
 //add the guess to a guess bank
+let currentImg = 5;
 
 function wrongGuess() {
   // add input to guess bank
   input = document.getElementById('input').value
   if (document.getElementById('input').value !== '') {
+
     let newH4 = document.createElement('h4');
     let textH4 = document.createTextNode(input)
     newH4.appendChild(textH4)
     document.getElementById('wrongGuess').appendChild(newH4)
     document.getElementById('input').value = ''
+
     //picture progression
+
+    document.getElementById('img').src=`./images/${currentImg}.jpg`
+    currentImg++
+    if (currentImg > 11) {
+      alert("Nooooooooooo, You already lost! Refresh the page to try again")
+    }
   }
 }
 

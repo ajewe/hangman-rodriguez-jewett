@@ -13,24 +13,24 @@
       <div class="background">
         <img src="./images/background2.jpg">
       </div>
-      <div class="gameGrid">
-        <img src="./images/0.jpg">
+      <div id="imgs" class="gameGrid">
+        <img id="img" src="./images/4.jpg">
       </div>
-      <div class="array">
-        <div class="one">-</div>
-        <div class="two">-</div>
-        <div class="three">-</div>
-        <div class="four">-</div>
-        <div class="five">-</div>
+      <div class="array" id="array">
+        <div class="one" id="one">-</div>
+        <div class="two" id="two">-</div>
+        <div class="three" id="three">-</div>
+        <div class="four" id="four">-</div>
+        <div class="five" id="five">-</div>
       </div>
-      <div class="wrongGuess">
+      <div id="wrongGuess" class="wrongGuess">
         <h3>Wrong Guesses</h3>
       </div>
       <div class="inputBox">
-        <form>
+        <form onsubmit="checkInput(); return false;">
           <span>Letter Input</span>
           <input id="input" type="text" name="input" cols=10>
-          <button>Submit</button>
+          <button type="submit">Submit</button>
         </form>
       </div>
     </div>

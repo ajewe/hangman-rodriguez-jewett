@@ -9,6 +9,12 @@ h1 {
   position: absolute;
   top: 50px;
 }
+
+h4 {
+  display: inline;
+  margin: 10px;
+}
+
 .grid {
   height: 100%;
   width: 100%;
@@ -42,6 +48,7 @@ h1 {
   border: 2px solid black;
   border-radius: 15px;
   text-align: center;
+  word-wrap: break-word;
 }
 .inputBox {
   position: absolute;
